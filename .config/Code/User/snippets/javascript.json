@@ -1,0 +1,44 @@
+{
+    "Print to console": {
+      "prefix": "log",
+      "body": [
+        "console.log('$1')"
+      ],
+      "description": "Log output to console"
+    },
+    "JSON stringify": {
+      "prefix": "JSON.",
+      "body": [
+        "JSON.stringify($1, null, 2)"
+      ],
+      "description": "JSON.stringify"
+    },
+    "timeout": {
+      "prefix": "timeout",
+      "body": [
+        "await new Promise(resolve => setTimeout(resolve, $1))"
+      ],
+      "description": "async setTimeout()"
+    },
+    "length": {
+      "prefix": "lenght",
+      "body": [
+        "length"
+      ],
+      "description": "lenGTH"
+    },
+    "it": {
+          "prefix": "it",
+          "body": [
+              "it('$1', async () => {\n\n})"
+          ],
+          "description": "It jasmine"
+    },
+    "describe": {
+          "prefix": "describe",
+          "body": [
+              "describe('$1', () => {\n\n})"
+          ],
+          "description": "Describe jasmine"
+      }
+  }
